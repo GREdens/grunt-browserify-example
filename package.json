@@ -2,7 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "description": "A test browserify project",
-  "main": "dist/bundle.js",
+  "main": "dist/release/mendix.min.js",
   "scripts": {
     "test": "test"
   },

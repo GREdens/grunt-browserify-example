@@ -1,10 +1,10 @@
 module.exports = function (grunt) {
     grunt.initConfig({
 
-        // define source files and their destinations
-        uglify: {
+        // define uglify, browserify, and watch tasks
+        'uglify': {
             files: { 
-                src: 'src/*.js',  // source files mask
+                src: 'src/**/*.js',  // source files mask
                 dest: 'obfuscated/',    // destination folder
                 expand: true,    // allow dynamic building
                 flatten: true,   // remove all unnecessary nesting
@@ -32,9 +32,10 @@ module.exports = function (grunt) {
                 dest: 'dist/release/mendix.min.js'
             }
         },
-        watch: {
+        'watch': {
             js:  { files: 'src/**/*.js', tasks: [ 'uglify', 'browserify' ] },
         }
+        
     });
 
     // load plugins
