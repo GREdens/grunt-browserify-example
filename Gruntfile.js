@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            js:  { files: 'js/*.js', tasks: [ 'uglify', 'browserify' ] },
+            js:  { files: 'src/**/*.js', tasks: [ 'uglify', 'browserify' ] },
         }
     });
 
